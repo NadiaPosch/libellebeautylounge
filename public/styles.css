@@ -1,0 +1,342 @@
+
+@media (max-width: 800px){
+	body{
+		background-image: url("img/libelle_background_small.jpg");
+	}
+
+	.section{
+		margin-top: 8vh;
+		padding: 10px 20px;
+	}
+
+	.section h1{
+		font-size: 18pt;
+	}
+
+	.big{
+		display: none;
+	}
+
+	.price__links{
+		display: block;
+		width: 80%;
+		margin: auto;
+	}
+
+	#panorama_big{
+		display: none;
+	}
+
+	#valeria {
+		width: 50%;
+	}
+
+	#aboutMe {
+		text-align: left;
+	}
+
+	#map{
+		width: 90%;
+		height: 30vh;
+		margin: 3vh 0 100px 0;
+	}
+
+	#navbar li a:hover {
+	  color: black;
+	}
+
+	#navbar li.active a {
+	  color: Tomato;
+	}
+
+}
+
+@media (min-width: 801px){
+	body {
+		background-image: url("img/libelle_background_big.jpg");
+	}
+
+	hr{
+		width:70% !important;
+	  min-width: 620px;
+	}
+
+	.section{
+		margin-top: 20vh;
+		padding: 10px !important;
+	}
+
+		.section h1{
+			font-size: 24pt;
+		}
+
+		/* .section a{ */
+			/* margin: 15px; */
+		/* } */
+
+	.small{
+		display: none;
+	}
+
+	.col1{
+		grid-column: 1;
+	}
+
+	.col3{
+		/* grid-column: 4; */
+		flex: 0 0 35px !important;
+	}
+
+	.col4{
+		/* grid-column: 4; */
+		text-align: right;
+		flex: 0 1 95px !important;
+	}
+
+	.price__links{
+		width: 25%;
+		min-width: 340px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#panorama_small{
+		display: none;
+	}
+
+	#valeria {
+		width: 15vw;
+	}
+
+	#aboutMe {
+		width: 50%;
+		min-width: 620px;
+		text-align: center;
+		margin: auto;
+	}
+
+	#map{
+		width: 30vw;
+		min-width: 400px;
+		height: 40vh;
+		min-height: 300px;
+		margin: 3vh 0 200px 0;
+	}
+
+	#navbar li a:hover {
+	  border-bottom: 2px solid Black;
+	  color: black;
+	}
+
+	#navbar li.active a {
+	  color: Tomato;
+	  border-bottom: 2px solid Black;
+	}
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 13pt;
+	text-align: center;
+	background-size: 100%;
+	margin: 0;
+	line-height: 1.6;
+}
+
+h1, ul{
+	font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  background-color: White;
+  text-align: center;
+}
+
+footer {
+	width: 100%;
+	margin: auto;
+	height: 50px;
+	background-color: rgba(70, 70, 70, .90);
+	color: #ffffff;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+hr{
+	color:Black;
+	margin: 5px auto;
+	width:100%;
+}
+
+
+.salon_panorama {
+	width: 90%;
+	min-width: 100px;
+	height: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.content {
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	background-color: rgba(255, 255, 255, .7);
+}
+
+
+	.section h1{
+		margin-top: 10vh;
+	}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+	.Table{
+		display: block;
+		max-width: 620px;
+    margin: auto;
+		/* justify-content: center; */
+		/* text-align: justify; */
+	}
+
+		.Table__row{
+			display: flex;
+			display: -ms-flexbox;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+		}
+
+		.Table__item{
+			padding: 5px;
+		}
+
+		.Table__item--title{
+			/* grid-column: 1 / span 4; */
+			text-align: left;
+			font-weight: bold;
+			flex: 0 0 100%;
+			-ms-flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		.gap{
+			/* grid-column: 1 / span 4; */
+			flex: 0 0 100%;
+			-ms-flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		.col1{
+			text-align: left;
+			padding-right: 10px;
+			flex: 1 1 30%;
+		}
+
+		.col2{
+			/* grid-column: 2; */
+			text-align: right;
+			flex: 0 0 55px;
+		}
+
+		.col3{
+			/* grid-column: 3; */
+			text-align: right;
+			flex: 0 1 auto;
+		}
+
+		.col4{
+			/* grid-column: 4; */
+			text-align: right;
+			flex: 0 0 50px;
+		}
+
+		.col__span{
+			/* grid-column: 1 / span 4; */
+			text-align: left;
+			flex: 0 0 100%;
+			-ms-flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+	.price__links{
+		display: block;
+		color: White;
+		background-color: Tomato;
+		border-radius: 10px;
+		padding: 10px;
+		text-decoration: none;
+		box-shadow: 5px 5px 10px grey;
+		transition: all .3s ease;
+	}
+
+		.price__links:hover{
+			box-shadow: 10px 10px 15px grey;
+			background-color: #cf391f;
+		}
+
+
+#navbar {
+	background-color: White;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 5px 0;
+}
+	#navbar ul{
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+	}
+
+	#navbar li{
+
+	}
+
+	#navbar li a {
+		text-align: center;
+		color: Black;
+		padding: 5px;
+		margin: 0 5px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+
+#logo_libelle {
+	width: 16%;
+	min-width: 200px;
+	height: auto;
+	background: White;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#welcome{
+	margin-top: 15vh;
+}
+
+#valeria {
+	min-width: 200px;
+	height: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	box-shadow: 2px 2px 5px grey;
+}
